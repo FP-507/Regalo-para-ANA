@@ -24,22 +24,25 @@
 		}
 		.controls {
 			position: fixed;
-			bottom: 10px;
-			left: 50%;
-			transform: translateX(-50%);
+			bottom: 0;
+			left: 0;
+			width: 100vw;
 			display: flex;
-			gap: 12px;
+			justify-content: center;
+			align-items: center;
+			gap: 24px;
 			z-index: 10;
-			padding: 0 4vw;
+			padding: 10px 0 10px 0;
+			background: transparent;
 		}
 		.btn {
-			width: 48px;
-			height: 48px;
+			width: 64px;
+			height: 64px;
 			border-radius: 50%;
 			background: #ffb6b9;
 			border: none;
 			box-shadow: 0 4px 16px rgba(255, 105, 135, 0.2);
-			font-size: 1.6em;
+			font-size: 2.2em;
 			color: #fff;
 			transition: background 0.2s, transform 0.1s;
 		}
@@ -82,17 +85,21 @@
 		@media (max-width: 600px) {
 			#gameCanvas {
 				width: 100vw;
-				height: calc(55vh - 60px);
-				min-height: 180px;
+				height: 48vh;
+				min-height: 140px;
 			}
 			.controls {
-				bottom: 2vw;
-				gap: 8px;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				width: 100vw;
+				gap: 16px;
+				padding: 8px 0 8px 0;
 			}
 			.btn {
-				width: 38px;
-				height: 38px;
-				font-size: 1.1em;
+				width: 56px;
+				height: 56px;
+				font-size: 1.7em;
 			}
 			#message {
 				padding: 10px 2px;
